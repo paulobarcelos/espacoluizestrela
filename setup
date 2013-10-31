@@ -1,0 +1,26 @@
+#!/bin/bash
+# Setup symlinks wp-content
+
+SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $SRC_DIR
+SRC_DIR=$(pwd)/
+cd ../espacoluizestrela.org/
+DST_DIR=$(pwd)/
+echo $DST_DIR
+
+
+echo ""
+echo "-----------------------------"
+echo "Creating theme symlink..."
+ln -s ${SRC_DIR}estrela ${DST_DIR}wp-content/themes/estrela
+
+
+
+echo ""
+echo "-----------------------------"
+echo "Coping wordpress language folder..."
+cp -r ${SRC_DIR}language ${DST_DIR}wp-content/language
+
+
+
+exit 1

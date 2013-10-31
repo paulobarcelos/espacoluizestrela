@@ -1,0 +1,21 @@
+/* -----------------------------------------
+   Theme Specific Media Queries
+----------------------------------------- */
+
+/* Small desktop to mobile ----- */
+@media only screen and (min-width: 960px) and (max-width: 480px) {
+
+}
+
+/* Only mobile ----- */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Main MQuery, iPad portrait and lower -- */
+@media only screen and (max-width: 768px) {
+	#nav { display: none; }
+	#mobile-bar { display: block; }
+	.mm-page { padding-top: 46px; }
+	#sidebar { margin-top: 60px;}
+}

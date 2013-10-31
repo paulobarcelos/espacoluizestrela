@@ -19,7 +19,7 @@ ln -s ${SRC_DIR}estrela ${DST_DIR}wp-content/themes/estrela
 echo ""
 echo "-----------------------------"
 echo "Coping wordpress language folder..."
-cp -r ${SRC_DIR}language ${DST_DIR}wp-content/language
+cp -r ${SRC_DIR}languages ${DST_DIR}wp-content/languages
 
 
 
